@@ -54,7 +54,21 @@ You can also do some more interesting things:
 
 The imporant thing about this is that the widget is defined by an JavaScript object. This means we can save it as files on our hard drive and `couchapp` will handle saving it as a JSON object for us.
 
-[screenshot of the above code in textmate's file drawer]
+    evently/
+    `-- heyjane
+        |-- hiJane
+        |   `-- mustache.html
+        |-- hiJoan
+        |   |-- after.js
+        |   `-- mustache.html
+        |-- _init
+        |   |-- mustache.html
+        |   `-- selectors
+        |       |-- a[href=#jane].json
+        |       `-- a[href=#joan].json
+        `-- janeRocks
+            |-- mustache.html
+            `-- render.json
 
 When we let CouchApp package our evently apps we get to work on them in individual files, instead of as a great big giant mess of JavaScript. This means HTML is HTML, JSON is JSON, and JavaScript is JavaScript. Yay!
 
